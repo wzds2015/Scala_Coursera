@@ -100,7 +100,8 @@ object Huffman {
 		// deal with rest of list first (return is a pair list) and then deal with the first pair
 		else org(chars.head, times(chars.tail))
 	}
-	
+
+	// version 2 (a simple one)
     /*	
     def times(chars: List[Char]) : List[(Char, Int)] = {
 		def org(cs: List[Char], count: List[(Char, Int)]) : List[(Char, Int)] = {

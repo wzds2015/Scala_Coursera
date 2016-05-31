@@ -141,6 +141,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
       else right.filterAcc(p, left.filterAcc(p, acc))
 
   // error, stack overflow??? 
+  // Explain: for A.union(B), we want A reduces, and B grows, otherwise it takes longer
   // def union(that: TweetSet) : TweetSet = ((that incl elem) union left) union right
   
   // this is correct
